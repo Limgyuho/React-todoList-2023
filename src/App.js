@@ -1,6 +1,16 @@
+import { AppBar, Toolbar } from "@mui/material";
+
 function App() {
   return (
-    <><i class="fa-regular fa-user"></i><div>안녕</div></>
+    <>
+      <AppBar position="static">
+        <Toolbar>
+          <div className="flex-1"></div>
+          <div className="font-bold">MY NOTE</div>
+          <div className="flex-1"></div>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }
 
