@@ -5,6 +5,7 @@ import TodoListItem from "../components/TodoListItem";
 export default function TodoList() {
   const todosState = useTodosState();
   const todoOptionDrawerState = useTodoOptionDrawerState();
+  const onCompletedBtnClicked = (id)=> todosState.todoTo;
 
   return (
     <>
