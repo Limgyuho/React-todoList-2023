@@ -19,7 +19,7 @@ export default function EditPage() {
 
     form.content.value = form.content.value.trim();
 
-    if (form.regDate.value.length == 0) {
+    if (form.performDate.value.length == 0) {
       alert("날짜를 입력해주세요.");
       form.performDate.focus();
       return;
@@ -33,7 +33,7 @@ export default function EditPage() {
 
     const newTodoId = todosState.modifyTodoById(
       todo.id,
-      form.regDate.value,
+      form.performDate.value,
       form.content.value
     );
 
@@ -41,7 +41,7 @@ export default function EditPage() {
     navigate(-1);
   };
 
-  const regDateForInput = todo.regDate.substr(0, 16).replace("", "T");
+  const performDateForInput = todo.regDate.substr(0, 16).replace("", "T");
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function EditPage() {
           focused
           type="datetime-local"
           name="regDate"
-          defaultValue={regDateForInput}
+          defaultValue={performDateForInput}
         />
 
         <TextField
