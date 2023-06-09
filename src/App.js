@@ -20,7 +20,7 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           
-          <NavLink to ="/main" className="font-bold select-none flex self-stretch items-center mr-auto ">MY NOTE</NavLink>
+          <NavLink to ="/main" className="font-bold select-none flex self-stretch items-center mr-auto ">MY TodoList</NavLink>
           
             {location.pathname == "/main" && (
               <NavLink to="/write" className="select-none flex self-stretch items-center ">할 일 추가</NavLink>
